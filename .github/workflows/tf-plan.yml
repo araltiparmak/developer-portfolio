@@ -6,13 +6,9 @@ on:
 
 permissions:
   id-token: write # This is required for aws oidc connection
-  contents: write
+  contents: read
   pull-requests: write # This is required for gh bot to comment PR
-  repository-projects: write
-
-#  contents: write
-#    pull-requests: write
-#    repository-projects: write
+#  repository-projects: write
 
 env:
   AWS_REGION: eu-central-1
