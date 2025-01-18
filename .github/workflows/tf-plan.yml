@@ -5,8 +5,14 @@ on:
     branches: [ main ]
 
 permissions:
-  id-token: write
-  contents: read
+  id-token: write # This is required for aws oidc connection
+  contents: write
+  pull-requests: write # This is required for gh bot to comment PR
+  repository-projects: write
+
+#  contents: write
+#    pull-requests: write
+#    repository-projects: write
 
 env:
   AWS_REGION: eu-central-1
@@ -50,7 +56,6 @@ jobs:
         env:
           PLAN: "terraform\n${{ steps.plan.outputs.stdout }}"
         with:
-#          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const output = `#### Terraform Format and Style 🖌\`${{ steps.fmt.outcome }}\`
             #### Terraform Initialization ⚙️\`${{ steps.init.outcome }}\`
