@@ -6,7 +6,7 @@ on:
 
 permissions:
   id-token: write # This is required for aws oidc connection
-#  contents: read
+  #  contents: read
   pull-requests: write # This is required for gh bot to comment PR
 
 env:
@@ -44,6 +44,7 @@ jobs:
       - run: terraform validate
 
       - name: Terraform Plan
+        id: plan
         run: terraform plan -no-color -input=false
 
       - name: Post Plan Results to Pull Request
