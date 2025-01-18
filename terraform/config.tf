@@ -10,7 +10,7 @@ terraform {
     key    = "developer-portfolio.tfstate"
     region = "eu-central-1"
   }
-  required_version = ">= 1.3.0"
+  required_version = ">= 1.10.4"
 }
 
 provider "aws" {
@@ -26,4 +26,5 @@ provider "aws" {
 locals {
   github_account = "araltiparmak"
   repo           = "developer-portfolio"
+  bucket         = "${local.github_account}-${local.repo}"
 }
