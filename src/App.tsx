@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {Construction} from 'lucide-react';
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+interface Styles {
+    container: React.CSSProperties;
+    card: React.CSSProperties;
+    title: React.CSSProperties;
 }
 
-export default App
+const styles: Styles = {
+    container: {
+        minHeight: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        padding: '20px',
+        backgroundColor: '#f8f9fa'
+    },
+    card: {
+        maxWidth: '500px',
+        width: '100%',
+        padding: '30px',
+        backgroundColor: 'white',
+        borderRadius: '8px',
+        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+        textAlign: 'center'
+    },
+    title: {
+        fontSize: '28px',
+        fontWeight: 'bold',
+        marginBottom: '16px',
+        color: '#333'
+    }
+};
+
+const App = () => {
+    return (
+        <div style={styles.container}>
+            <div style={styles.card}>
+                <Construction size={48} color="#f59e0b"/>
+                <h1 style={styles.title}>Launching Soon</h1>
+            </div>
+        </div>
+    );
+};
+
+export default App;
