@@ -1,7 +1,12 @@
-import React from 'react';
 import {Construction} from 'lucide-react';
 
-const styles = {
+interface Styles {
+    container: React.CSSProperties;
+    card: React.CSSProperties;
+    title: React.CSSProperties;
+}
+
+const styles: Styles = {
     container: {
         minHeight: '100%',
         display: 'flex',
