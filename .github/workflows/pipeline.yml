@@ -8,6 +8,7 @@ on:
 
 env:
   NODE_VERSION: 22
+  AWS_REGION: eu-central-1
   BUCKET_NAME: araltiparmak-developer-portfolio
 
 jobs:
@@ -54,7 +55,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE }}
-          aws-region: ${{ secrets.AWS_REGION }}
+          aws-region: ${{ env.AWS_REGION }}
 
       - name: Download artifact
         uses: actions/download-artifact@v4
