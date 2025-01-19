@@ -7,10 +7,6 @@ on:
       - 'terraform/**'
       - '.github/workflows/tf-apply.yml'
 
-permissions:
-  id-token: write
-  contents: read
-
 env:
   AWS_REGION: eu-central-1
   TERRAFORM_VERSION: 1.10.4
@@ -23,6 +19,10 @@ jobs:
     defaults:
       run:
         working-directory: ${{ env.TERRAFORM_WORKING_DIRECTORY }}
+
+    permissions:
+      id-token: write # This is required for aws oidc connection
+      contents: read
 
     steps:
       - name: Checkout Repository

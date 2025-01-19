@@ -4,16 +4,10 @@ on:
   pull_request:
     branches: [ main ]
 
-permissions:
-  id-token: write # This is required for aws oidc connection
-  #  contents: read
-  pull-requests: write # This is required for gh bot to comment PR
-
 env:
   AWS_REGION: eu-central-1
   TERRAFORM_VERSION: 1.10.4
   TERRAFORM_WORKING_DIRECTORY: terraform
-  BUCKET_NAME: araltiparmak-developer-portfolio
 
 jobs:
   terraform-plan:
@@ -22,6 +16,10 @@ jobs:
     defaults:
       run:
         working-directory: ${{ env.TERRAFORM_WORKING_DIRECTORY }}
+
+    permissions:
+      id-token: write # This is required for aws oidc connection
+      pull-requests: write # This is required for gh bot to comment PR
 
     steps:
       - uses: actions/checkout@v4
