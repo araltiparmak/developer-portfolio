@@ -1,45 +1,37 @@
-import {Construction} from 'lucide-react';
+import { Projects } from "./components/sections/Projects.tsx";
+import { ReadingList } from "./components/sections/ReadingList.tsx";
+import { MySetup } from "./components/sections/MySetup.tsx";
+import { Footer } from "./components/Footer.tsx";
+import { useNavigationStore } from "./hooks/useNavigationStore.ts";
+import { Header } from "./components/Header.tsx";
+import { Navigation } from "./components/Navigation.tsx";
+import { About } from "./components/sections/About.tsx";
 
-interface Styles {
-    container: React.CSSProperties;
-    card: React.CSSProperties;
-    title: React.CSSProperties;
-}
-
-const styles: Styles = {
-    container: {
-        minHeight: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-        padding: '20px',
-        backgroundColor: '#f8f9fa'
-    },
-    card: {
-        maxWidth: '500px',
-        width: '100%',
-        padding: '30px',
-        backgroundColor: 'white',
-        borderRadius: '8px',
-        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-        textAlign: 'center'
-    },
-    title: {
-        fontSize: '28px',
-        fontWeight: 'bold',
-        marginBottom: '16px',
-        color: '#333'
-    }
+type SectionMap = {
+  [key: string]: React.ReactElement;
 };
 
 const App = () => {
-    return (
-        <div style={styles.container}>
-            <div style={styles.card}>
-                <Construction size={48} color="#f59e0b"/>
-                <h1 style={styles.title}>Launching Soon</h1>
-            </div>
-        </div>
-    );
+  const { activeSection } = useNavigationStore();
+
+  const sectionMap: SectionMap = {
+    projects: <Projects />,
+    mySetup: <MySetup />,
+    reading: <ReadingList />,
+    about: <About />,
+  };
+
+  return (
+    <div className="max-w-4xl mx-auto p-6 font-sans text-gray-800">
+      <Header />
+
+      <Navigation />
+
+      {sectionMap[activeSection]}
+
+      <Footer />
+    </div>
+  );
 };
 
 export default App;
