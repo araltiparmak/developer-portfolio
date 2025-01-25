@@ -22,13 +22,14 @@ const App = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 font-sans text-gray-800">
-      <Header />
+    <div className="min-h-screen flex flex-col">
+      <div className="max-w-4xl mx-auto p-6 font-sans text-gray-800 flex-1">
+        <Header />
 
-      <Navigation />
+        <Navigation />
 
-      {sectionMap[activeSection]}
-
+        {sectionMap[activeSection]}
+      </div>
       <Footer />
     </div>
   );
