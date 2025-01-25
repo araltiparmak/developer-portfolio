@@ -1,4 +1,5 @@
 import { name, title, links } from "../data/DB.ts";
+import { Link } from "./atoms/Link.tsx";
 
 export const Header = () => {
   return (
@@ -15,15 +16,8 @@ const Links = () => {
     <>
       {links.map((link) => (
         <>
-          <a
-            key={link.url}
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
-          >
-            {link.title}
-          </a>
+          <Link key={link.url} url={link.url} text={link.title} />
+
           <br />
         </>
       ))}
