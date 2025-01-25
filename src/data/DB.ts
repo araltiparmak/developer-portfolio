@@ -1,3 +1,4 @@
+//Projects
 export const projects = [
   {
     title: "Developer Portfolio App",
@@ -15,6 +16,16 @@ export const projects = [
   },
 ];
 
+//Tech Stack
+export const techStack = {
+  languages: ["Java", "JavaScript", "TypeScript", "Bash"],
+  frameworks: ["Spring Boot", "React", "React Native"],
+  devOps: ["GitHub Actions", "AWS", "SonarCloud"],
+  tools: ["IntelliJ IDEA", "VS Code", "Notion", "Figma"],
+  utilities: ["Alfred", "Fluor", "Iterm2"],
+};
+
+//Reading List
 enum ReadingStatus {
   NotStarted,
   Reading,
@@ -65,6 +76,7 @@ export const aboutText = `Software engineer with expertise in web technologies.
 export const navigationItems = [
   { key: "about", label: "About Me" },
   { key: "projects", label: "Projects" },
+  { key: "techStack", label: "Tech Stack" },
   { key: "mySetup", label: "My Setup" },
   { key: "reading", label: "Reading List" },
 ];
