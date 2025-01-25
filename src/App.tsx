@@ -7,10 +7,14 @@ import { Header } from "./components/Header.tsx";
 import { Navigation } from "./components/Navigation.tsx";
 import { About } from "./components/sections/About.tsx";
 
+type SectionMap = {
+  [key: string]: React.ReactElement;
+};
+
 const App = () => {
   const { activeSection } = useNavigationStore();
 
-  const sectionMap = {
+  const sectionMap: SectionMap = {
     projects: <Projects />,
     mySetup: <MySetup />,
     reading: <ReadingList />,
