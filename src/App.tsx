@@ -6,6 +6,7 @@ import { useNavigationStore } from "./hooks/useNavigationStore.ts";
 import { Header } from "./components/Header.tsx";
 import { Navigation } from "./components/Navigation.tsx";
 import { About } from "./components/sections/About.tsx";
+import { TechStack } from "./components/sections/TechStack.tsx";
 
 type SectionMap = {
   [key: string]: React.ReactElement;
@@ -19,6 +20,7 @@ const App = () => {
     mySetup: <MySetup />,
     reading: <ReadingList />,
     about: <About />,
+    techStack: <TechStack />,
   };
 
   return (

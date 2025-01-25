@@ -2,6 +2,7 @@ import { projects } from "../../data/DB.ts";
 import { SectionTitle } from "../atoms/SectionTitle.tsx";
 import { Link } from "../atoms/Link.tsx";
 import { Card } from "../atoms/Card.tsx";
+import { Chip } from "../atoms/Chip.tsx";
 
 export const Projects = () => {
   return (
@@ -15,12 +16,7 @@ export const Projects = () => {
             <p className="text-gray-600 mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2">
               {project.tech.map((tech) => (
-                <span
-                  key={tech}
-                  className="bg-gray-100 text-sm px-2 py-1 rounded"
-                >
-                  {tech}
-                </span>
+                <Chip key={tech} text={tech} />
               ))}
             </div>
             <br />
