@@ -1,8 +1,8 @@
-import { projects } from "../../data/DB.ts";
-import { SectionTitle } from "../atoms/SectionTitle.tsx";
-import { Link } from "../atoms/Link.tsx";
-import { Card } from "../atoms/Card.tsx";
-import { Chip } from "../atoms/Chip.tsx";
+import { projects } from "../data/DB.ts";
+import { SectionTitle } from "../components/atoms/SectionTitle.tsx";
+import { Link } from "../components/atoms/Link.tsx";
+import { Card } from "../components/atoms/Card.tsx";
+import { Chip } from "../components/atoms/Chip.tsx";
 
 export const Projects = () => {
   return (
@@ -20,9 +20,9 @@ export const Projects = () => {
               ))}
             </div>
             <br />
-            <Link url={project.sourceCode} text={"GitHub"} />
+            <Link url={project.sourceCode} label={"GitHub"} />
             <br /> <br />
-            {project.url && <Link url={project.url} text={"Live Demo"} />}
+            {project.url && <Link url={project.url} label={"Live Demo"} />}
           </Card>
         ))}
       </div>

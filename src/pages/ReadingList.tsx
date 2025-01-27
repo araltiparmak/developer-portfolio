@@ -1,6 +1,6 @@
-import { readingList } from "../../data/DB.ts";
-import { SectionTitle } from "../atoms/SectionTitle.tsx";
-import { Card } from "../atoms/Card.tsx";
+import { readingList } from "../data/DB.ts";
+import { SectionTitle } from "../components/atoms/SectionTitle.tsx";
+import { Card } from "../components/atoms/Card.tsx";
 
 export const ReadingList = () => {
   return (
