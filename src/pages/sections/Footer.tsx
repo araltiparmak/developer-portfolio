@@ -1,4 +1,4 @@
-import { footerText } from "../data/DB.ts";
+import { footerText } from "../../data/DB.ts";
 
 export const Footer = () => {
   return (

@@ -8,7 +8,7 @@ export const projects = [
     url: "http://araltiparmak-developer-portfolio.s3-website.eu-central-1.amazonaws.com",
   },
   {
-    title: "Diction Exercises App",
+    title: "Diction Exercises Android App",
     description: "",
     tech: ["Kotlin", "Firebase"],
     sourceCode: "https://github.com/araltiparmak/diction-exercises-android",
@@ -57,11 +57,24 @@ export const setupItems = [
 ];
 
 //Header
+export type Link = {
+  url: string;
+  label: string;
+  icon?: string;
+};
 export const name = "Ali Rıza Altıparmak";
 export const title = "Senior Software Engineer";
-export const links = [
-  { title: "LinkedIn", url: "https://www.linkedin.com/in/araltiparmak/" },
-  { title: "GitHub", url: "https://github.com/araltiparmak/" },
+export const links: Link[] = [
+  {
+    label: "LinkedIn",
+    url: "https://www.linkedin.com/in/araltiparmak/",
+    icon: "linkedin.png",
+  },
+  {
+    label: "GitHub",
+    url: "https://github.com/araltiparmak/",
+    icon: "github.svg",
+  },
 ];
 
 //Footer
