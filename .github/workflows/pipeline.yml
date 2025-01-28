@@ -9,7 +9,7 @@ on:
 env:
   NODE_VERSION: 22
   AWS_REGION: eu-central-1
-  BUCKET_NAME: araltiparmak-developer-portfolio
+  BUCKET_NAME: aliriza.dev
 
 jobs:
   build:
