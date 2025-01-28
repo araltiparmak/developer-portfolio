@@ -26,5 +26,5 @@ provider "aws" {
 locals {
   github_account = "araltiparmak"
   repo           = "developer-portfolio"
-  bucket         = "${local.github_account}-${local.repo}"
+  bucket         = "aliriza.dev"
 }
