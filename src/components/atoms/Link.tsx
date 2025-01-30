@@ -11,7 +11,7 @@ export const Link = ({
     href={url}
     target="_blank"
     rel="noopener noreferrer"
-    className="text-blue-600 hover:underline"
+    className="text-sm text-blue-600 hover:text-blue-800 inline-block mt-2"
   >
     {icon ? (
       <img src={`${icon}`} alt={label} className="h-6 w-6 inline-block mr-2" />
