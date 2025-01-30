@@ -10,9 +10,20 @@ export const MySetup = () => {
       <div className="space-y-4">
         {setupItems.map((item) => (
           <Card key={item.title.trim()}>
-            <div>
-              <h3 className="font-bold">{item.title}</h3>
-              {item.url && <Link url={item.url} label={"Product link"} />}
+            <div className="space-y-2">
+              <h3 className="font-bold text-lg">{item.title}</h3>
+              <ul className="space-y-1">
+                {item.specs.map((spec, index) => (
+                  <li
+                    key={index}
+                    className="text-sm text-gray-700 flex items-center"
+                  >
+                    <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>{" "}
+                    {spec}
+                  </li>
+                ))}
+              </ul>
+              {item.url && <Link url={item.url} label={"View Product →"} />}
             </div>
           </Card>
         ))}

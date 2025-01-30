@@ -5,7 +5,7 @@ export const projects = [
     description: "",
     tech: ["React", "TypeScript", "Vite", "Tailwind"],
     sourceCode: "https://github.com/araltiparmak/developer-portfolio",
-    url: "http://araltiparmak-developer-portfolio.s3-website.eu-central-1.amazonaws.com",
+    url: "https://aliriza.dev",
   },
   {
     title: "Diction Exercises Android App",
@@ -26,34 +26,53 @@ export const techStack = {
 };
 
 //Reading List
-enum ReadingStatus {
-  NotStarted,
-  Reading,
-  Completed,
+enum ReadingProgress {
+  NotStarted = "Not Started",
+  CurrentlyReading = "Currently Reading",
+  Finished = "Finished",
 }
 
 type ReadingListItem = {
   title: string;
   author: string;
-  status: ReadingStatus;
+  url: string;
+  progress: ReadingProgress;
 };
 
 export const readingList: ReadingListItem[] = [
   {
-    title: "Book 1",
-    author: "Author 1",
-    status: ReadingStatus.Reading,
+    title: "Ultralearning",
+    author: "Scott Young",
+    url: "https://www.amazon.com/Ultralearning-Strategies-Mastering-Skills-Getting/dp/0008305706",
+    progress: ReadingProgress.CurrentlyReading,
   },
 ];
 
 //My Setup
 export const setupItems = [
-  { title: "MacBook Pro M3, 16', 36GB", url: "" },
   {
-    title: "MSI MAG 274UPFDE, 27'",
-    url: "https://www.msi.com/Monitor/MAG-274UPF",
+    title: "Workstation",
+    specs: ["MacBook Pro M3", "16-inch Display", "36GB RAM"],
+    url: "",
+    icon: "Laptop",
   },
-  { title: "CalDigit TS3 Plus", url: "https://www.caldigit.com/ts3-plus" },
+  {
+    title: "Monitor",
+    specs: [
+      "MSI MAG 274UPFDE",
+      "27-inch Display",
+      "4K Resolution",
+      "144Hz Refresh Rate",
+    ],
+    url: "https://www.msi.com/Monitor/MAG-274UPF",
+    icon: "Monitor",
+  },
+  {
+    title: "Docking Station",
+    specs: ["CalDigit TS3 Plus"],
+    url: "https://www.caldigit.com/ts3-plus",
+    icon: "Box",
+  },
 ];
 
 //Header
