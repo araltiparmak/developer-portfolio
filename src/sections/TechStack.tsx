@@ -1,15 +1,15 @@
-import { techStack } from "../data/DB.ts";
 import { SectionTitle } from "../components/atoms/SectionTitle.tsx";
 import { Card } from "../components/atoms/Card.tsx";
 import { Chip } from "../components/atoms/Chip.tsx";
 import { Icon } from "../components/atoms/Icon.tsx";
+import { techStack } from "../data/techStack.ts";
 
 export const TechStack = () => {
   return (
     <section>
       <SectionTitle title="Tech Stack 🛠" />
 
-      <div className="grid md:grid-cols gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {Object.entries(techStack).map(([key, stack]) => (
           <Card key={key}>
             <div className="flex items-start gap-3">

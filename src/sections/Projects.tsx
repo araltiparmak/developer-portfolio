@@ -1,13 +1,13 @@
-import { projects } from "../data/DB.ts";
 import { SectionTitle } from "../components/atoms/SectionTitle.tsx";
 import { Link } from "../components/atoms/Link.tsx";
 import { Card } from "../components/atoms/Card.tsx";
 import { Chip } from "../components/atoms/Chip.tsx";
+import { projects } from "../data/projects.ts";
 
 export const Projects = () => {
   return (
     <section>
-      <SectionTitle title="Projects 👨🏻‍💻" />
+      <SectionTitle title="Projects" />
 
       <div className="grid md:grid-cols gap-6">
         {projects.map((project) => (
