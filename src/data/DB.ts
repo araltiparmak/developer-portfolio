@@ -14,7 +14,6 @@ export const projects = [
       "GitHub Actions",
     ],
     sourceCode: "https://github.com/araltiparmak/developer-portfolio",
-    url: "https://aliriza.dev",
   },
   {
     title: "Diction Exercises Android App",
