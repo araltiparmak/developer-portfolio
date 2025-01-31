@@ -9,7 +9,7 @@ export const TechStack = () => {
     <section>
       <SectionTitle title="Tech Stack 🛠" />
 
-      <div className="grid md:grid-cols gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {Object.entries(techStack).map(([key, stack]) => (
           <Card key={key}>
             <div className="flex items-start gap-3">

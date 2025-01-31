@@ -7,7 +7,7 @@ import { Icon } from "../components/atoms/Icon.tsx";
 export const MySetup = () => {
   return (
     <section>
-      <SectionTitle title={"My Setup 😎"} />
+      <SectionTitle title={"My Setup"} />
       <div className="space-y-4">
         {setupItems.map((item) => (
           <Card key={item.title.trim()}>

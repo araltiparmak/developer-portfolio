@@ -7,7 +7,7 @@ import { Chip } from "../components/atoms/Chip.tsx";
 export const Projects = () => {
   return (
     <section>
-      <SectionTitle title="Projects 👨🏻‍💻" />
+      <SectionTitle title="Projects" />
 
       <div className="grid md:grid-cols gap-6">
         {projects.map((project) => (
