@@ -29,7 +29,7 @@ export const projects = [
 export const techStack = {
   languages: {
     items: ["Java", "JavaScript", "TypeScript", "Bash"],
-    icon: "Code2",
+    icon: "Code",
   },
   frameworks: {
     items: ["Spring Boot", "React", "React Native"],

@@ -1,30 +1,8 @@
-import {
-  Box,
-  Code2,
-  Laptop,
-  Monitor,
-  Boxes,
-  Wrench,
-  FolderGit2,
-  Settings,
-} from "lucide-react";
+import { icons } from "lucide-react";
+type IconName = keyof typeof icons;
 
-export const Icon = ({ name, color }: { name: string; color: string }) => {
-  const iconMap = {
-    Laptop,
-    Monitor,
-    Box,
-    Code2,
-    Boxes,
-    Wrench,
-    FolderGit2,
-    Settings,
-  } as const;
+export const Icon = ({ name, color }: { name: IconName; color: string }) => {
+  const Icon = icons[name];
 
-  // @ts-ignore
-  const IconComponent = iconMap[name];
-
-  return IconComponent ? (
-    <IconComponent className={`w-6 h-6 ${color}`} />
-  ) : null;
+  return Icon ? <Icon className={`w-6 h-6 ${color}`} /> : null;
 };
