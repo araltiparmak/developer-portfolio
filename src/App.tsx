@@ -5,7 +5,6 @@ import { Footer } from "./pages/sections/Footer.tsx";
 import { useNavigationStore } from "./hooks/useNavigationStore.ts";
 import { Header } from "./pages/sections/Header.tsx";
 import { Navigation } from "./components/Navigation.tsx";
-import { About } from "./pages/About.tsx";
 import { TechStack } from "./pages/TechStack.tsx";
 
 type SectionMap = {
@@ -19,7 +18,6 @@ const App = () => {
     projects: <Projects />,
     mySetup: <MySetup />,
     reading: <ReadingList />,
-    about: <About />,
     techStack: <TechStack />,
   };
 

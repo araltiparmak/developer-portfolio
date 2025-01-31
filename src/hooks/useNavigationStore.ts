@@ -1,4 +1,5 @@
 import { create } from "zustand/react";
+import { navigationItems } from "../data/DB.ts";
 
 interface NavigationStore {
   activeSection: string;
@@ -6,6 +7,6 @@ interface NavigationStore {
 }
 
 export const useNavigationStore = create<NavigationStore>()((set) => ({
-  activeSection: "about",
+  activeSection: navigationItems[0].key,
   setActiveSection: (activeSection: string) => set({ activeSection }),
 }));
