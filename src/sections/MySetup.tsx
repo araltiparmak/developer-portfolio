@@ -1,8 +1,8 @@
-import { setupItems } from "../data/DB.ts";
 import { SectionTitle } from "../components/atoms/SectionTitle.tsx";
 import { Link } from "../components/atoms/Link.tsx";
 import { Card } from "../components/atoms/Card.tsx";
 import { Icon } from "../components/atoms/Icon.tsx";
+import { setupItems } from "../data/mySetup.ts";
 
 export const MySetup = () => {
   return (

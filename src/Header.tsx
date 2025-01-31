@@ -1,5 +1,5 @@
-import { aboutText, links, name, title } from "../../data/DB.ts";
-import { Link } from "../../components/atoms/Link.tsx";
+import { aboutText, links, name, title } from "./data/DB.ts";
+import { Link } from "./components/atoms/Link.tsx";
 
 export const Header = () => {
   return (
