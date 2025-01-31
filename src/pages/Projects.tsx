@@ -7,7 +7,7 @@ import { Chip } from "../components/atoms/Chip.tsx";
 export const Projects = () => {
   return (
     <section>
-      <SectionTitle title="Projects" />
+      <SectionTitle title="Projects 👨🏻‍💻" />
 
       <div className="grid md:grid-cols gap-6">
         {projects.map((project) => (
@@ -20,9 +20,9 @@ export const Projects = () => {
               ))}
             </div>
             <br />
-            <Link url={project.sourceCode} label={"GitHub"} />
+            <Link url={project.sourceCode} label={"GitHub →"} />
             <br /> <br />
-            {project.url && <Link url={project.url} label={"Live Demo"} />}
+            {project.url && <Link url={project.url} label={"Live Demo →"} />}
           </Card>
         ))}
       </div>

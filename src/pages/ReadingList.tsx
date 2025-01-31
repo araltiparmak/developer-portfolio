@@ -7,7 +7,7 @@ import { BookOpen } from "lucide-react";
 export const ReadingList = () => {
   return (
     <section>
-      <SectionTitle title="Reading List" />
+      <SectionTitle title="Reading List 📖" />
 
       <div className="space-y-4">
         {readingList.map((book) => (

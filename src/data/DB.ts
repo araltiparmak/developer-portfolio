@@ -1,9 +1,18 @@
 //Projects
+//TODO: Add description
 export const projects = [
   {
-    title: "Developer Portfolio App",
+    title: "Developer Portfolio App (Under development 🛠️)",
     description: "",
-    tech: ["React", "TypeScript", "Vite", "Tailwind"],
+    tech: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "S3",
+      "CloudFront",
+      "GitHub Actions",
+    ],
     sourceCode: "https://github.com/araltiparmak/developer-portfolio",
     url: "https://aliriza.dev",
   },
@@ -18,11 +27,23 @@ export const projects = [
 
 //Tech Stack
 export const techStack = {
-  languages: ["Java", "JavaScript", "TypeScript", "Bash"],
-  frameworks: ["Spring Boot", "React", "React Native"],
-  devOps: ["GitHub Actions", "AWS", "SonarCloud"],
-  tools: ["IntelliJ IDEA", "VS Code", "Notion", "Figma"],
-  utilities: ["Alfred", "Fluor", "Iterm2"],
+  languages: {
+    items: ["Java", "JavaScript", "TypeScript", "Bash"],
+    icon: "Code",
+  },
+  frameworks: {
+    items: ["Spring Boot", "React", "React Native"],
+    icon: "Boxes",
+  },
+  devOps: {
+    items: ["GitHub Actions", "AWS", "SonarCloud"],
+    icon: "FolderGit2",
+  },
+  tools: {
+    items: ["IntelliJ IDEA", "VS Code", "Notion", "Figma"],
+    icon: "Settings",
+  },
+  utilities: { items: ["Alfred", "Fluor", "Iterm2"], icon: "Wrench" },
 };
 
 //Reading List
@@ -97,16 +118,17 @@ export const links: Link[] = [
 ];
 
 //Footer
-const buildWith = "React & Tailwind";
+const buildWith = "React & Tailwind CSS";
 export const footerText = `© ${new Date().getFullYear()}. Built with ${buildWith}.`;
 
 //About
-export const aboutText = `Software engineer with expertise in web technologies.
-                Focused on creating clean, efficient, and user-friendly applications.`;
+export const aboutText = [
+  "Digital craftsman specializing in elegant web solutions.",
+  "Committed to creating streamlined, efficient, and intuitive applications with meticulous attention to details.",
+];
 
 //Navigation
 export const navigationItems = [
-  { key: "about", label: "About Me" },
   { key: "projects", label: "Projects" },
   { key: "techStack", label: "Tech Stack" },
   { key: "mySetup", label: "My Setup" },
