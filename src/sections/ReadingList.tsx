@@ -1,4 +1,8 @@
-import { readingList, ReadingListItem, ReadingProgress } from "../data/DB.ts";
+import {
+  readingList,
+  ReadingListItem,
+  ReadingProgress,
+} from "../data/readingList.ts";
 import { SectionTitle } from "../components/atoms/SectionTitle.tsx";
 import { Card } from "../components/atoms/Card.tsx";
 import { Link } from "../components/atoms/Link.tsx";

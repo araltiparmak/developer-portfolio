@@ -1,8 +1,8 @@
-import { techStack } from "../data/DB.ts";
 import { SectionTitle } from "../components/atoms/SectionTitle.tsx";
 import { Card } from "../components/atoms/Card.tsx";
 import { Chip } from "../components/atoms/Chip.tsx";
 import { Icon } from "../components/atoms/Icon.tsx";
+import { techStack } from "../data/techStack.ts";
 
 export const TechStack = () => {
   return (
