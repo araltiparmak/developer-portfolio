@@ -1,6 +1,6 @@
 
 # Project URL
-http://araltiparmak-developer-portfolio.s3-website.eu-central-1.amazonaws.com/
+https://aliriza.dev/
 
 # React + TypeScript + Vite
 
