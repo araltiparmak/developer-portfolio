@@ -1,5 +1,7 @@
 module "website" {
-  source          = "./static-site"
-  domain_name     = local.bucket
-  with_cloudfront = true
+  source              = "./static-site"
+  domain_name         = local.bucket
+  with_cloudfront     = true
+  cloudfront_aliases  = ["www.araltiparmak.com", "araltiparmak.com"]
+  acm_certificate_arn = "arn:aws:acm:us-east-1:789798665829:certificate/ef64a36f-1384-43a2-9264-7aef24c20496"
 }

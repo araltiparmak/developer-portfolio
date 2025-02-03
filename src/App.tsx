@@ -27,15 +27,16 @@ const App = () => {
 
   return (
     <>
-      <Header />
-      <div className=" min-h-screen flex flex-col justify-center">
-        <div className="max-w-4xl mx-auto p-6 font-sans text-gray-800 flex-1">
-          <Navigation />
-
-          {sectionsMap[activeSection]}
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <div className="flex-1">
+          <div className="max-w-4xl mx-auto p-6 font-sans text-gray-800">
+            <Navigation />
+            {sectionsMap[activeSection]}
+          </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };
