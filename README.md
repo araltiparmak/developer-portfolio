@@ -1,6 +1,7 @@
 
-# Project URL
-https://aliriza.dev/
+# Project URLs
+http://araltiparmak.com
+https://aliriza.dev
 
 # React + TypeScript + Vite
 
