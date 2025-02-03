@@ -20,4 +20,4 @@ export const links: Link[] = [
 ];
 
 export const welcomeText =
-  "Welcome to my Workshop - where I craft 🛠️, experiment 🧪, and bring ideas 💡 to life.";
+  "👋 Welcome to my Workshop - where I craft 🛠️, experiment 🧪, and bring ideas 💡 to life.";
