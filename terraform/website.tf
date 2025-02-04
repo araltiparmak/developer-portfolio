@@ -1,5 +1,5 @@
 module "website" {
-  source              = "./static-site"
+  source              = "github.com/araltiparmak/terraform-modules//static-site?ref=v1.0.0"
   domain_name         = local.bucket
   with_cloudfront     = true
   cloudfront_aliases  = ["www.araltiparmak.com", "araltiparmak.com"]
