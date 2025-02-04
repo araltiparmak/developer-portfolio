@@ -1,6 +1,6 @@
 
 # Project URLs
-http://araltiparmak.com
+https://araltiparmak.com
 
 https://aliriza.dev
 
