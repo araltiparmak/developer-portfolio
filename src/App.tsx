@@ -26,18 +26,18 @@ const App = () => {
   };
 
   return (
-    <>
-      <div className="min-h-screen flex flex-col">
-        <Header />
-        <div className="flex-1">
-          <div className="max-w-4xl mx-auto p-6 font-sans text-gray-800">
-            <Navigation />
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-1 w-full">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4 sm:py-6 font-sans text-gray-800 w-full">
+          <Navigation />
+          <div className="mt-4 sm:mt-6 overflow-x-hidden">
             {sectionsMap[activeSection]}
           </div>
         </div>
-        <Footer />
-      </div>
-    </>
+      </main>
+      <Footer />
+    </div>
   );
 };
 

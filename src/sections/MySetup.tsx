@@ -7,7 +7,7 @@ import { setupItems } from "../data/mySetup.ts";
 export const MySetup = () => {
   return (
     <section>
-      <SectionTitle title={"My Setup"} />
+      <SectionTitle title={".mySetup"} />
       <div className="space-y-4">
         {setupItems.map((item) => (
           <Card key={item.title.trim()}>

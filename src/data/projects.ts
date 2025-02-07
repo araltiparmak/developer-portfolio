@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: "Developer Portfolio",
+    title: "Developer Portfolio (Under development 🛠️)",
     description: "This website️.",
     tech: [
       "React",
@@ -15,10 +15,18 @@ export const projects = [
     sourceCode: "https://github.com/araltiparmak/developer-portfolio",
   },
   {
-    title: "Diction Exercises Android App",
+    title: "Diction Exercises React Native Application (Under development 🛠️)",
     description:
       "An Android application focused on diction improvement and practicing tongue twisters.",
-    tech: ["Kotlin", "Firebase"],
+    tech: ["React Native", "Tamagui", "Expo", "Cloud Firestore"],
+    sourceCode: "https://github.com/araltiparmak/diction",
+    url: "",
+  },
+  {
+    title: "Diction Exercises Android Application",
+    description:
+      "An Android application focused on diction improvement and practicing tongue twisters.",
+    tech: ["Kotlin", "Firebase Realtime Database"],
     sourceCode: "https://github.com/araltiparmak/diction-exercises-android",
     url: "",
   },

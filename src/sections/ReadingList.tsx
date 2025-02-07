@@ -11,7 +11,7 @@ import { Icon } from "../components/atoms/Icon.tsx";
 export const ReadingList = () => {
   return (
     <section>
-      <SectionTitle title="Reading List (2024 - 2025) 📖" />
+      <SectionTitle title=".readingList (2024 - 2025) 📖" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {readingList.map((book) => (
