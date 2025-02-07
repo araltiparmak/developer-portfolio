@@ -7,7 +7,7 @@ import { techStack } from "../data/techStack.ts";
 export const TechStack = () => {
   return (
     <section>
-      <SectionTitle title="Tech Stack 🛠" />
+      <SectionTitle title=".techStack 🛠" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {Object.entries(techStack).map(([key, stack]) => (

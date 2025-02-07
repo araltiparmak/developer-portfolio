@@ -7,7 +7,7 @@ import { projects } from "../data/projects.ts";
 export const Projects = () => {
   return (
     <section>
-      <SectionTitle title="Projects" />
+      <SectionTitle title=".projects" />
 
       <div className="grid md:grid-cols gap-6">
         {projects.map((project) => (
