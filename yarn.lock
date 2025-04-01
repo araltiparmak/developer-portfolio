@@ -442,10 +442,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.19.0, @eslint/js@npm:^9.17.0":
+"@eslint/js@npm:9.19.0":
   version: 9.19.0
   resolution: "@eslint/js@npm:9.19.0"
   checksum: 10c0/45dc544c8803984f80a438b47a8e578fae4f6e15bc8478a703827aaf05e21380b42a43560374ce4dad0d5cb6349e17430fc9ce1686fed2efe5d1ff117939ff90
+  languageName: node
+  linkType: hard
+
+"@eslint/js@npm:^9.23.0":
+  version: 9.23.0
+  resolution: "@eslint/js@npm:9.23.0"
+  checksum: 10c0/4e70869372b6325389e0ab51cac6d3062689807d1cef2c3434857571422ce11dde3c62777af85c382b9f94d937127598d605d2086787f08611351bf99faded81
   languageName: node
   linkType: hard
 
@@ -1371,7 +1378,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "developer-portfolio@workspace:."
   dependencies:
-    "@eslint/js": "npm:^9.17.0"
+    "@eslint/js": "npm:^9.23.0"
     "@tailwindcss/vite": "npm:^4.0.0"
     "@types/react": "npm:^18.3.18"
     "@types/react-dom": "npm:^18.3.5"
