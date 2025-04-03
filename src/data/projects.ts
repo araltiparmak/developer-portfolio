@@ -1,4 +1,6 @@
-export const projects = [
+import { Project } from "../types.ts";
+
+export const projects: Project[] = [
   {
     title: "Developer Portfolio (Under development 🛠️)",
     description: "This website️.",
@@ -13,6 +15,32 @@ export const projects = [
       "GitHub Actions",
     ],
     sourceCode: "https://github.com/araltiparmak/developer-portfolio",
+  },
+  {
+    title: "AI-Powered Dynamic UI Generator (Under development 🛠️)",
+    description:
+      "A serverless system that transforms natural language into functional interfaces",
+    descriptionDetails: [
+      "**AI Schema Generation:** Node.js Lambda uses Bedrock (Amazon Nova) to convert user prompts into structured JSON form definitions.",
+      "**Instant UI Rendering:** Lightweight engine dynamically interprets JSON to generate responsive forms with validation and conditional logic.",
+      "**Enterprise-Ready Architecture:** Serverless AWS infrastructure ensures scalability while maintaining low latency.",
+    ],
+    tech: [
+      "Bedrock (Amazon Nova)",
+      "Lambda",
+      "API Gateway",
+      "S3",
+      "CloudFront",
+      "Route 53",
+      "React",
+      "Node.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vite",
+      "GitHub Actions",
+    ],
+    sourceCode: "https://github.com/araltiparmak/developer-portfolio",
+    url: "https://ui.araltiparmak.com",
   },
   {
     title: "Diction Exercises React Native Application (Under development 🛠️)",
