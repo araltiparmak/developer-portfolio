@@ -4,6 +4,7 @@ import { Card } from "../components/atoms/Card.tsx";
 import { Chip } from "../components/atoms/Chip.tsx";
 import { projects } from "../data/projects.ts";
 import ReactMarkdown from "react-markdown";
+import { GitHubLink } from "../components/atoms/GitHubLink.tsx";
 
 export const Projects = () => {
   return (
@@ -29,8 +30,9 @@ export const Projects = () => {
               ))}
             </div>
             <br />
-            <Link url={project.sourceCode} label={"GitHub →"} />
-            <br /> <br />
+
+            {project.sourceCode && <GitHubLink url={project.sourceCode} />}
+
             {project.url && <Link url={project.url} label={"Live Demo →"} />}
           </Card>
         ))}
