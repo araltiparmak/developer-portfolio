@@ -2,9 +2,11 @@ export const Link = ({
   url,
   label,
   icon,
+  alt,
 }: {
   url: string;
-  label: string;
+  label?: string;
+  alt?: string;
   icon?: string;
 }) => (
   <a
@@ -14,7 +16,7 @@ export const Link = ({
     className="text-sm text-blue-600 hover:text-blue-800 inline-block mt-2"
   >
     {icon && (
-      <img src={`${icon}`} alt={label} className="h-6 w-6 inline-block mr-2" />
+      <img src={`${icon}`} alt={alt} className="h-6 w-6 inline-block mr-2" />
     )}
     {label}
   </a>

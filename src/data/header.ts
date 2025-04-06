@@ -1,6 +1,7 @@
 export type Link = {
   url: string;
-  label: string;
+  label?: string;
+  alt?: string;
   icon?: string;
 };
 
@@ -8,12 +9,12 @@ export const name = "Ali Rıza Altıparmak";
 export const title = "Senior Software Engineer";
 export const links: Link[] = [
   {
-    label: "LinkedIn",
+    alt: "LinkedIn",
     url: "https://www.linkedin.com/in/araltiparmak/",
     icon: "linkedin.png",
   },
   {
-    label: "GitHub",
+    alt: "GitHub",
     url: "https://github.com/araltiparmak/",
     icon: "github.svg",
   },
